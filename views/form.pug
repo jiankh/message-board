@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 New Message Form
+
+  form(action="/new" method="post")
+    label(for="Author") Author:
+    input(type="text" id="author" name="author" required)
+
+    label(for="Message") Message:
+    textarea(id="message" name="message" rows="4" required)
+
+    button(type="submit") Submit Message
